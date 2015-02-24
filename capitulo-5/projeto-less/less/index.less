@@ -1,0 +1,32 @@
+@import 'base';
+
+@cor: red;
+
+h1 {
+	color: @cor;
+	.borda-arredondada;
+}
+
+p {
+	color: @cor;
+	.borda-arredondada(15px);
+}
+
+article {
+    h1 {
+        width: floor(@largura-tela/3);
+        background-color: darken(blue, 30%);
+    }
+    p {
+        background-color: lighten(yellow, 35%);
+        em {
+            font-size: 40px;
+        }
+    }
+}
+
+@largura-tela: 940px;
+
+body {
+    width: @largura-tela;
+}
